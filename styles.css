@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+p {
+
+}
+
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+
+#wrapper {
+  padding: 30px;
+  width: 700px;
+  margin: 0 auto;
+  background-color: rgb(105,201,249);
+}
+
+#contactFormArea {
+   width: 300px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+#cardArea {
+   width: 300px;
+   display: inline-block;
+   vertical-align: top;
+}
