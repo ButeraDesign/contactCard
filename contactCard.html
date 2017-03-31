@@ -5,17 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
 	<script type="text/javascript">
-    $(document).ready(function(){
-
-			$(document).on('click', '#desc', function(){
-				($(this).parent()).find("p#desc").hide();
-				($(this).parent()).find("p#name").show();
+   	 $(document).ready(function(){
+		$(document).on('click', '#desc', function(){
+			($(this).parent()).find("p#desc").hide();
+			($(this).parent()).find("p#name").show();
 
    		});
 
-			$(document).on('click', '#name', function(){
-				($(this).parent()).find("p#name").hide();
-				($(this).parent()).find("p#desc").show();
+		$(document).on('click', '#name', function(){
+			($(this).parent()).find("p#name").hide();
+			($(this).parent()).find("p#desc").show();
 
    		});
 
@@ -26,30 +25,28 @@
         var LastName = $("#LastName").val();
         var Description = $("#Description").val();
 
-				var newCardContent = "";
-						newCardContent += '<div class="card" >';
-				    newCardContent += '<p id="desc" >';
-						newCardContent +=	Description;
-						newCardContent +=	"<br> ";
-						newCardContent +=	'<a id="nameDtag" ';
-						newCardContent +=	'href="#">Click for name!</a>';
-						newCardContent +=	"</p> ";
+	var newCardContent = "";
+	newCardContent += '<div class="card" >';
+	newCardContent += '<p id="desc" >';
+	newCardContent +=	Description;
+	newCardContent +=	"<br> ";
+	newCardContent +=	'<a id="nameDtag" ';
+	newCardContent +=	'href="#">Click for name!</a>';
+	newCardContent +=	"</p> ";
 
-						newCardContent += '<p id="name" >';
-						newCardContent += FirstName;
-						newCardContent +=	" ";
-						newCardContent +=	LastName;
-						newCardContent +=	"<br> ";
-						newCardContent +=	'<a id="nameAtag" ';
-						newCardContent +=	'href="#">Click for description!</a>';
-						newCardContent +=	"</p>";
-						newCardContent +=	'</div>';
-
-				//alert(newCardContent);
+	newCardContent += '<p id="name" >';
+	newCardContent += FirstName;
+	newCardContent +=	" ";
+	newCardContent +=	LastName;
+	newCardContent +=	"<br> ";
+	newCardContent +=	'<a id="nameAtag" ';
+	newCardContent +=	'href="#">Click for description!</a>';
+	newCardContent +=	"</p>";
+	newCardContent +=	'</div>';
+				
         $("#cardArea").append(newCardContent);
-		    $("p#desc").hide();
-				$("p#name").show();
-
+	$("p#desc").hide();
+	$("p#name").show();
 
         return false;
       });
@@ -66,18 +63,14 @@
 	      FirstName:<input id="FirstName" type="text" name="FirstName" /><br>
 	      LastName:<input id="LastName" type="text" name="LastName" /><br>
 	      Discription:<br>
-				<textarea id="Description">Enter Description</textarea><br>
+	      <textarea id="Description">Enter Description</textarea><br>
 	      <input type="submit" value="Add User" />
 	    </form>
-		</div>
-
+	    
+	    </div>
 		<div id="cardArea">
 		</div>
-
-
-
-
-  </div>
+  	    </div>
 
 </body>
 </html>
